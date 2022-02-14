@@ -1,0 +1,15 @@
+sekund = int(input("Sekundni kiriting - "))
+
+yil = sekund // (365*24*3600)
+
+oy = (sekund  % (365*24*3600)) // (30*24*3600)
+
+kun = (sekund % (30*24*3600) // (24*3600))
+
+soat = (sekund %  (24*3600)) // 3600
+
+minut = ( sekund %  3600 ) // 60
+
+sekun = sekund % 60
+
+print(yil,"yil",oy,"oy",kun,"kun",soat,"soat",minut,"minut",sekun,"sekund")
