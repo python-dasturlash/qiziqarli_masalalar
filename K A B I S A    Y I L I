@@ -1,0 +1,12 @@
+while True:
+    while True:
+        k = int(input("Yilni kiriting - "))
+        if  k % 400 == 0:
+            print(k,"- yil kabisa yili")
+        elif k % 100 == 0:
+            print(k,"- yil kabisa yili emas")
+            break
+        elif k % 4 == 0:
+            print(k,"- yil kabisa yili")
+        else:
+            print(k,"- yil kabisa yili emas")
