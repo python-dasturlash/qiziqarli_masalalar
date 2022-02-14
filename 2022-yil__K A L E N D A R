@@ -1,0 +1,57 @@
+kun = int(input("kunni kiriting(1-365) - "))
+hafta = kun % 7
+hafta_kuni = (hafta + 5) % 7
+
+if 1 <= kun <= 31:
+    print(kun,"- yanvar")
+   
+elif 32 <= kun <= 59:
+    print(kun-31,"- fevral")
+   
+elif 60 <= kun <= 90:
+    print(kun-59,"- mart")
+    
+elif 91 <= kun <= 120:
+    print(kun-90,"- aprel")
+   
+elif 121 <= kun <= 151:
+    print(kun-120,"- may")
+   
+elif 152 <= kun <= 181:
+    print(kun-151,"- iyun")
+   
+elif 182 <= kun <= 212:
+    print(kun-181,"- iyul")
+   
+elif 213 <= kun <= 243:
+    print(kun-212,"- avgust")
+    
+elif 244 <= kun <= 273:
+    print(kun-243,"- sentyabr")
+   
+elif 274 <= kun <= 304:
+    print(kun-273,"- oktyabr")
+    
+elif 305 <= kun <= 334:
+    print(kun-304,"- noyabr")
+    
+elif 335 <= kun <= 365:
+    print(kun-334,"- dekabr")
+    
+
+if kun <= 0  or  kun > 365:
+    print("1 va 365 orasidagi sonni kiriting !!!")
+elif hafta_kuni == 1:
+     print("Dushanba")
+elif hafta_kuni == 2:
+     print("Seshanba")
+elif hafta_kuni == 3:
+     print("Chorshanba")
+elif hafta_kuni == 4:
+     print("Payshanba")
+elif hafta_kuni == 5:
+     print("Juma")
+elif hafta_kuni == 6:
+     print("Shanba")
+elif hafta_kuni == 0:
+     print("Yakshanba")
