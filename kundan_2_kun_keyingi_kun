@@ -1,0 +1,70 @@
+k = int(input("kun = "))
+o = int(input("oy = "))
+y = int(input("yil = "))
+
+if y % 400 == 0:
+    kabisa = 1
+elif y % 100 == 0:
+    kabisa = 0
+elif y % 4 == 0:
+    kabisa = 1
+else:
+    kabisa = 0
+
+
+if (k == 28 or k == 29) and o == 2 and kabisa == 1:
+    if k == 28:
+        k = 1
+        o = 3
+    elif k == 29:
+        k = 2
+        o = 3
+
+elif (k == 27 or k == 28 or k == 29) and o == 2 and kabisa == 0:
+    if k == 27:
+        k = 1
+        o = 3
+    elif k == 28:
+        k = 2
+        o = 3
+    elif k == 29:
+        k = 0
+
+elif (k == 30 or k == 31) and (o == 1 or o == 3 or o == 5 or o == 7 or o == 8 or o == 10):
+    if k == 30:
+        k = 1
+        o += 1
+    elif k == 31:
+        k = 2
+        o += 1
+
+elif (k == 29 or k == 30) and (o == 4 or o == 6 or o == 9 or o == 11):
+    if k == 29:
+        k = 1
+        o += 1
+    elif k == 30:
+        k = 2
+        o += 1
+
+elif (k == 30 or k == 31) and o == 12:
+    if k == 30:
+        k = 1
+        o = 1
+        y += 1
+    elif k == 31:
+        k = 2
+        o = 1
+        y += 1
+        
+elif 1 <= k <= 29 and 1 <= o <= 12:
+    k += 2
+
+else:
+    k = 0
+
+
+if k != 0:
+    print(k,o,y,sep=".")
+else:
+    print("Xatolik yuz berdi!!!")
+    
