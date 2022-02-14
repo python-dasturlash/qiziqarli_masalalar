@@ -1,0 +1,42 @@
+a = int(input("Bo'linuvchini kiriting:  a = "))
+b = int(input("Bo'luvchini kiriting:  b = "))
+
+s=0
+butun=0
+while s <= a:
+    s += b
+    butun += 1
+
+qol = s - b
+qoldiq = a - qol
+
+
+
+w = 10
+while True:
+    if qoldiq != 0 and w != 0:
+       
+        on=10
+        summa = 0
+
+        while on != 0:
+            on -= 1
+            summa += qoldiq
+
+        yigindi = 0
+        butu = 0
+
+        while yigindi <= summa:
+            yigindi += b
+            butu += 1
+        qol = butu - 1
+        d = yigindi - b
+        qoldiq = summa - d
+        if w == 10:
+            print(butun-1,end=".")
+            print(qol,end="")
+        else:
+            print(qol,end="")
+        w -= 1
+    else:
+        break
