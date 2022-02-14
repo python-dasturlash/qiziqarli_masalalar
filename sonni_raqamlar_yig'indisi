@@ -1,0 +1,6 @@
+son = int(input("Son kiriting - "))
+s = 0
+while son > 0:
+    s = s + (son % 10)
+    son = son // 10
+print(s)
