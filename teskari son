@@ -1,0 +1,7 @@
+a = int(input("uch honali son kiriting - "))
+s = a // 100
+d = a // 10
+f = d % 10
+g = a % 10
+j = g * 100 + f * 10 +s
+print(j)
