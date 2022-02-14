@@ -1,0 +1,8 @@
+a = int(input("Bo'linuvchini kiriting:  a = "))  
+b = int(input("Bo'luvchini kiriting:  b = "))
+s = 0
+n = 0
+while s <= a:
+    s += b
+    n += 1
+print(n-1)
