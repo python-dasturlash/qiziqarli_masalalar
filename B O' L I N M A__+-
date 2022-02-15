@@ -10,8 +10,7 @@ while s <= a:
 qol = s - b
 qoldiq = a - qol
 
-
-
+butun_qism = str(butun-1)+"."
 w = 10
 while True:
     if qoldiq != 0 and w != 0:
@@ -22,21 +21,18 @@ while True:
         while on != 0:
             on -= 1
             summa += qoldiq
-
+        
         yigindi = 0
         butu = 0
 
         while yigindi <= summa:
             yigindi += b
             butu += 1
-        qol = butu - 1
-        d = yigindi - b
-        qoldiq = summa - d
-        if w == 10:
-            print(butun-1,end=".")
-            print(qol,end="")
-        else:
-            print(qol,end="")
+        kasr_qism = str(butu - 1)
+        qoldiq = summa - (yigindi - b)
+        butun_qism += kasr_qism
         w -= 1
     else:
         break
+
+print(butun_qism)
