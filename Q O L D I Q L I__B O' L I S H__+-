@@ -1,6 +1,0 @@
-a = int(input("Bo'linuvchini kiriting:  a = "))  
-b = int(input("Bo'luvchini kiriting:  b = "))
-s = 0
-while s <= a:
-    s += b
-print(a - (s - b))
