@@ -1,0 +1,19 @@
+n = int(input("Nechta son kiritmoqchisiz - "))
+
+a = int(input(str(1)+") "))
+
+mini = a 
+maxi = a
+
+for i in range(2,n+1):
+
+    a = int(input(str(i)+") "))
+    
+    if a < mini:
+        mini = a
+        
+    if a > maxi:
+        maxi = a
+        
+print("min =",mini)
+print("max =",maxi)
