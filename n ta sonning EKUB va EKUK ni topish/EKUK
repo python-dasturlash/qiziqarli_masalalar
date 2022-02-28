@@ -1,0 +1,28 @@
+EKUK = []
+
+n = int(input("Nechta son kiritmoqchisiz:  "))
+
+for i in range(1,n+1):
+    a = int(input(str(i)+") "))
+    EKUK.append(a)
+
+max = a   
+
+for i in EKUK:
+    if i > max:
+        max = i
+
+s = 1
+
+for i in EKUK:
+    s *= i
+    
+for i in range(max,s+1,max):
+    d = 0
+    for j in EKUK:
+        if i % j == 0:
+            d += 1
+            
+    if d == n:
+        print("EKUK =",i)
+        break
