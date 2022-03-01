@@ -1,207 +1,231 @@
 n = int(input('n = '))
 
 bir = n % 10
-on = n%100//10
-yuz = n%1000 // 100
-ming = n%10000 // 1000
-onming = n%100000 // 10000
-yuzming = n%1000000 // 100000
-million = n%10000000 // 1000000
-onmillion = n%100000000 // 10000000
-yuzmillion = n%1000000000 // 100000000
+on = n // 10 % 10
+yuz = n // 100 % 10
+ming = n // 1000 % 10
+onming = n // 10000 % 10
+yuzming = n // 100000 % 10
+million = n // 1000000 % 10
+onmillion = n // 10000000 % 10
+yuzmillion = n // 100000000 % 10
 
-#Yuzmillion
+s = str()
+
+#Yuz million
 
 if yuzmillion == 1:
-    print("Yuz",end=' ')
-if yuzmillion == 2:
-    print("Ikkiyuz",end=' ')
-if yuzmillion == 3:
-    print("Uchyuz",end=' ')
-if yuzmillion == 4:
-    print("To'rtyuz",end=' ')
-if yuzmillion == 5:
-    print("Beshyuz",end=' ')
-if yuzmillion == 6:
-    print("Oltiyuz",end=' ')
-if yuzmillion == 7:
-    print("Yettiyuz",end=' ')
-if yuzmillion == 8:
-    print("Sakkizyuz",end=' ')
-if yuzmillion == 9:
-    print("To'qqizyuz",end=' ')
+    a = 'bir yuz'
+elif yuzmillion == 2:
+    a = 'ikki yuz'
+elif yuzmillion == 3:
+    a = 'uch yuz'
+elif yuzmillion == 4:
+    a = "to'rt yuz"
+elif yuzmillion == 5:
+    a = 'besh yuz'
+elif yuzmillion == 6:
+    a = 'olti yuz'
+elif yuzmillion == 7:
+    a = 'yetti yuz'
+elif yuzmillion == 8:
+    a = 'sakkiz yuz'
+elif yuzmillion == 9:
+    a = "to'qqiz yuz"
 
-# Onmillion    
+# On million    
     
 if onmillion == 1:
-    print("O'n",end=' ')
-if onmillion == 2:
-    print("Yigirma",end=' ')
-if onmillion == 3:
-    print("O'ttiz",end=' ')
-if onmillion == 4:
-    print("Qirq",end=' ')
-if onmillion == 5:
-    print("Ellik",end=' ')
-if onmillion == 6:
-    print("Oltimish",end=' ')
-if onmillion == 7:
-    print("Yetmish",end=' ')
-if onmillion == 8:
-    print("Sakson",end=' ')
-if onmillion == 9:
-    print("To'qson",end=' ')
+    b = "o'n"
+elif onmillion == 2:
+    b = "yigirma"
+elif onmillion == 3:
+    b = "o'ttiz"
+elif onmillion == 4:
+    b = "qirq"
+elif onmillion == 5:
+    b = "ellik"
+elif onmillion == 6:
+    b = "oltmish"
+elif onmillion == 7:
+    b = "yetmish"
+elif onmillion == 8:
+    b = "sakson"
+elif onmillion == 9:
+    b = "to'qson"
     
 # Million
     
 if million == 1:
-    print("Bir",end=' ')
-if million == 2:
-    print("Ikki",end=' ')
-if million == 3:
-    print("Uch",end=' ')
-if million == 4:
-    print("To'rt",end=' ')
-if million == 5:
-    print("Besh",end=' ')
-if million == 6:
-    print("Olti",end=' ')
-if million == 7:
-    print("Yetti",end=' ')
-if million == 8:
-    print("Sakkiz",end=' ')
-if million == 9:
-    print("To'qqiz",end=' ')
+    c = "bir"
+elif million == 2:
+    c = "ikki"
+elif million == 3:
+    c = "uch"
+elif million == 4:
+    c = "to'rt"
+elif million == 5:
+   c = "besh"
+elif million == 6:
+    c = "olti"
+elif million == 7:
+    c = "yetti"
+elif million == 8:
+    c = "sakkiz"
+elif million == 9:
+    c = "to'qqiz"
     
-if million or yuzmillion or onmillion:
-    print("million",end=' ')
-    
-# Yuzming
+if yuzmillion:
+    s += a+" "
+if onmillion:
+    s += b+" "
+if million:
+    s += c+" "
+if yuzmillion or onmillion or million:
+    s += 'million '
+
+
+# Yuz ming
     
 if yuzming == 1:
-    print("Biryuz",end=' ')
-if yuzming == 2:
-    print("Ikkiyuz",end=' ')
-if yuzming == 3:
-    print("Uchyuz",end=' ')
-if yuzming == 4:
-    print("To'rtyuz",end=' ')
-if yuzming == 5:
-    print("Beshyuz",end=' ')
-if yuzming == 6:
-    print("Oltiyuz",end=' ')
-if yuzming == 7:
-    print("Yettiyuz",end=' ')
-if yuzming == 8:
-    print("Sakkizyuz",end=' ')
-if yuzming == 9:
-    print("To'qqizyuz",end=' ')
+    d = "bir yuz"
+elif yuzming == 2:
+    d = "ikki yuz"
+elif yuzming == 3:
+    d = "uch yuz"
+elif yuzming == 4:
+    d = "to'rt yuz"
+elif yuzming == 5:
+    d = "besh yuz"
+elif yuzming == 6:
+    d = "olti yuz"
+elif yuzming == 7:
+    d = "yetti yuz"
+elif yuzming == 8:
+    d = "sakkiz yuz"
+elif yuzming == 9:
+    d = "to'qqiz yuz"
     
-# Onming
+# On ming
     
 if onming == 1:
-    print("O'n",end=' ')
-if onming == 2:
-    print("Yigirma",end=' ')
-if onming == 3:
-    print("O'ttiz",end=' ')
-if onming == 4:
-    print("Qirq",end=' ')
-if onming == 5:
-    print("Ellik",end=' ')
-if onming == 6:
-    print("Oltimish",end=' ')
-if onming == 7:
-    print("Yetmish",end=' ')
-if onming == 8:
-    print("Sakson",end=' ')
-if onming == 9:
-    print("To'qson",end=' ')
+    e = "o'n"
+elif onming == 2:
+    e = "yigirma"
+elif onming == 3:
+    e = "o'ttiz"
+elif onming == 4:
+    e = "qirq"
+elif onming == 5:
+    e = "ellik"
+elif onming == 6:
+    e = "oltmish"
+elif onming == 7:
+    e = "yetmish"
+elif onming == 8:
+    e = "sakson"
+elif onming == 9:
+    e = "to'qson"
     
 #Ming
     
 if ming == 1:
-    print("Bir",end=' ')
-if ming == 2:
-    print("Ikki",end=' ')
-if ming == 3:
-    print("Uch",end=' ')
-if ming == 4:
-    print("To'rt",end=' ')
-if ming == 5:
-    print("Besh",end=' ')
-if ming == 6:
-    print("Olti",end=' ')
-if ming == 7:
-    print("Yetti",end=' ')
-if ming == 8:
-    print("Sakkiz",end=' ')
-if ming == 9:
-    print("To'qqiz",end=' ')
+    f = "bir"
+elif ming == 2:
+    f = "ikki"
+elif ming == 3:
+    f = "uch"
+elif ming == 4:
+    f = "to'rt"
+elif ming == 5:
+    f = "besh"
+elif ming == 6:
+    f = "olti"
+elif ming == 7:
+    f = "yetti"
+elif ming == 8:
+    f = "sakkiz"
+elif ming == 9:
+    f = "to'qqiz"
     
+if yuzming:
+    s += d+" "
+if onming:
+    s += e+" "
+if ming:
+    s += f+" "
+if yuzming or onming or ming:
+    s += "ming "
 
-if ming or yuzming or onming:
-    print("ming",end=' ')
 
 # Yuz
     
 if yuz == 1:
-    print("Biryuz",end=' ')
-if yuz == 2:
-    print("Ikkiyuz",end=' ')
-if yuz == 3:
-    print("Uchyuz",end=' ')
-if yuz == 4:
-    print("To'rtyuz",end=' ')
-if yuz == 5:
-    print("Beshyuz",end=' ')
-if yuz == 6:
-    print("Oltiyuz",end=' ')
-if yuz == 7:
-    print("Yettiyuz",end=' ')
-if yuz == 8:
-    print("Sakkizyuz",end=' ')
-if yuz == 9:
-    print("To'qqizyuz",end=' ')
+    j = "bir yuz"
+elif yuz == 2:
+    j = "ikki yuz"
+elif yuz == 3:
+    j = "uch yuz"
+elif yuz == 4:
+    j = "to'rt yuz"
+elif yuz == 5:
+    j = "besh yuz"
+elif yuz == 6:
+    j = "olti yuz"
+elif yuz == 7:
+    j = "yetti yuz"
+elif yuz == 8:
+    j = "sakkiz yuz"
+elif yuz == 9:
+    j = "to'qqiz yuz"
     
 # On
     
 if on == 1:
-    print("O'n",end=' ')
-if on == 2:
-    print("Yigirma",end=' ')
-if on == 3:
-    print("O'ttiz",end=' ')
-if on == 4:
-    print("Qirq",end=' ')
-if on == 5:
-    print("Ellik",end=' ')
-if on == 6:
-    print("Oltimish",end=' ')
-if on == 7:
-    print("Yetmish",end=' ')
-if on == 8:
-    print("Sakson",end=' ')
-if on == 9:
-    print("To'qson",end=' ')
+    k = "o'n"
+elif on == 2:
+    k = "yigirma"
+elif on == 3:
+    k = "o'ttiz"
+elif on == 4:
+    k = "qirq"
+elif on == 5:
+    k = "ellik"
+elif on == 6:
+    k = "oltmish"
+elif on == 7:
+    k = "yetmish"
+elif on == 8:
+    k = "sakson"
+elif on == 9:
+    k = "to'qson"
     
 #Bir
     
 if bir == 1:
-    print("Bir",end=' ')
-if bir == 2:
-    print("Ikki",end=' ')
-if bir == 3:
-    print("Uch",end=' ')
-if bir == 4:
-    print("To'rt",end=' ')
-if bir == 5:
-    print("Besh",end=' ')
-if bir == 6:
-    print("Olti",end=' ')
-if bir == 7:
-    print("Yetti",end=' ')
-if bir == 8:
-    print("Sakkiz",end=' ')
-if bir == 9:
-    print("To'qqiz",end=' ')
+    l = "bir"
+elif bir == 2:
+    l = "ikki"
+elif bir == 3:
+    l = "uch"
+elif bir == 4:
+    l = "to'rt"
+elif bir == 5:
+    l = "besh"
+elif bir == 6:
+    l = "olti"
+elif bir == 7:
+    l = "yetti"
+elif bir == 8:
+    l = "sakkiz"
+elif bir == 9:
+    l = "to'qqiz"
+
+if yuz:
+    s += j+" "
+if on:
+    s += k+" "
+if bir:
+    s += l
+
+print(s.capitalize())
