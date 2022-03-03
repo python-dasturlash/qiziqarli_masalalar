@@ -1,7 +1,7 @@
-a = int(input("uch honali son kiriting - "))
-s = a // 100
-d = a // 10
-f = d % 10
-g = a % 10
-j = g * 100 + f * 10 +s
-print(j)
+n = int(input('Sonni kiriting:     '))
+s = 0
+while n != 0:
+    a = n % 10
+    s = s * 10 + a
+    n //= 10
+print("Sonning teskarisi: ",s)
