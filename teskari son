@@ -4,3 +4,4 @@ while n != 0:
     s = s * 10 + n % 10
     n //= 10
 print("Sonning teskarisi: ",s)
+
