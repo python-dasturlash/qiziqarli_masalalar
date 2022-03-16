@@ -1,0 +1,14 @@
+# N ta sonning EKUBi
+
+N = int(input("N = "))
+EKUB = int(input(str(1)+') '))
+j = 1
+while N != 1:
+    N -= 1
+    j += 1
+    a = int(input(str(j)+') '))
+    for i in range(EKUB,0,-1):
+        if a % i == 0 and EKUB % i == 0:
+            EKUB = i
+            break
+print("EKUB =",EKUB)
