@@ -1,0 +1,14 @@
+# N ta sonning EKUKi
+
+N = int(input("N = "))
+EKUK = int(input(str(1)+') '))
+j = 1
+while N != 1:
+    N -= 1
+    j += 1
+    a = int(input(str(j)+') '))
+    for i in range(EKUK,EKUK*a+1):
+        if i % a == 0 and i % EKUK == 0:
+            EKUK = i
+            break
+print(EKUK)
