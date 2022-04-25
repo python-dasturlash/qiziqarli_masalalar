@@ -1,0 +1,29 @@
+from random import randint
+
+n = int(input('n = '))
+
+matrix = [[randint(1,5) for i in range(n)] for j in range(n)]
+
+j = 0
+for i in matrix:
+    j += 1
+    if len(matrix) // 2+1 == j:
+        print(*i,' x ',*i)
+    else:
+        print(*i,'   ',*i)
+print()
+
+
+a = []
+for i in range(n):
+    b = []
+    for j in range(n):
+        s = 0
+        for k in range(n):
+            s += matrix[i][k] * matrix[k][j]
+        b.append(s)
+        
+    a.append(b)
+
+for i in a:
+    print(*i)
