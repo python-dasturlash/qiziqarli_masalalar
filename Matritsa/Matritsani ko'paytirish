@@ -2,28 +2,27 @@ from random import randint
 
 n = int(input('n = '))
 
-matrix = [[randint(1,5) for i in range(n)] for j in range(n)]
+matrix1 = [[randint(1,5) for i in range(n)] for j in range(n)]
+matrix2 = [[randint(1,5) for i in range(n)] for j in range(n)]
 
-j = 0
-for i in matrix:
-    j += 1
-    if len(matrix) // 2+1 == j:
-        print(*i,' x ',*i)
-    else:
-        print(*i,'   ',*i)
+for i in matrix1:
+    print(*i)
+
 print()
 
-
+for i in matrix2:
+    print(*i)
+    
 a = []
 for i in range(n):
     b = []
     for j in range(n):
         s = 0
         for k in range(n):
-            s += matrix[i][k] * matrix[k][j]
+            s += matrix1[i][k] * matrix2[k][j]
         b.append(s)
-        
     a.append(b)
-
+    
+print()
 for i in a:
     print(*i)
