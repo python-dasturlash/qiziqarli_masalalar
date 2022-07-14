@@ -1,0 +1,22 @@
+from random import randint
+
+n = int(input('n = '))
+
+matrix = [[randint(0,9) for _ in range(n)] for _ in range(n)]
+
+for i in matrix:
+    print(*i)
+
+def Det(matrix):
+    if len(matrix) == 0:
+        return 1
+    else:
+        summa = 0
+        for j in range(len(matrix)):
+            mat = []
+            for s in range(len(matrix[1:])):
+                mat.append(matrix[1+s][:j] + matrix[1+s][j+1:])
+            summa += matrix[0][j] * ((-1)**(1+(j+1))) * Det(mat)
+        return summa
+
+print("\nDeterminant =",Det(matrix))
